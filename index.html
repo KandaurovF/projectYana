@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сборник стихов</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="./img/Favicon-min.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <button class="burger-menu-btn btn" type="button">
+          <svg class="burger-icon">
+            <use href="./img/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <a class="header-logo link" href="./index.html">
+          <svg class="header-logo-icon">
+            <use href="./img/sprite.svg#icon-header-logo"></use>
+          </svg>
+        </a>
+        <ul class="header-soc-list list">
+          <li class="header-soc-item">
+            <a href="" class="header-soc-link link">
+              <svg class="header-soc-icon">
+                <use href="./img/sprite.svg#telegram-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-soc-item">
+            <a href="" class="header-soc-link link">
+              <svg class="header-soc-icon">
+                <use href="./img/sprite.svg#email-icon"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-heading">Cборник стихов</h1>
+          <picture class="hero-image">
+            <source
+              srcset="
+                ./img/hero/hero-desktop-min.jpg    1x,
+                ./img/hero/hero-desktop@2x-min.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+
+            <source
+              srcset="
+                ./img/hero/hero-tablet-min.png    1x,
+                ./img/hero/hero-tablet@2x-min.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+
+            <source
+              srcset="
+                ./img/hero/hero-mobile-min.png    1x,
+                ./img/hero/hero-mobile@2x-min.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+
+            <img class="hero-img" src="#" alt="заставка с автором" />
+          </picture>
+        </div>
+      </section>
+
+      <section class="partitions">
+        <div class="container">
+          <h2 class="partitions-heading subhead">Разделы</h2>
+          <div class="partitions-wrapper">
+            <picture>
+              <source
+                srcset="
+                  ./img/partitions/partitions-main-desktop-min.jpg    1x,
+                  ./img/partitions/partitions-main-desktop@2x-min.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./img/partitions/partitions-main-tablet-min.jpg    1x,
+                  ./img/partitions/partitions-main-tablet@2x-min.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/partitions/partitions-main-min.jpg    1x,
+                  ./img/partitions/partitions-main@2x-min.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="partitions-main-img"
+                src="./img/partitions/partitions-main-min.jpg "
+                alt="рабочий стол автора"
+              />
+            </picture>
+
+            <picture>
+              <source
+                srcset="./img/partitions/transparent-brown-desktop-min.jpg"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./img/partitions/transparent-brown-tablet-min.jpg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./img/partitions/transparent-brown-min.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="partitions-secondary-img"
+                src="./img/partitions/transparent-brown-min.jpg"
+                alt="подложка"
+              />
+            </picture>
+
+            <picture>
+              <source
+                srcset="./img/Metal-PaperClips-desktop-min.png"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./img/Metal-PaperClips-tablet-min.png"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./img/Metal-PaperClips-mobile-min.png"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="partition-paper-clip"
+                src="./img/Metal-PaperClips-mobile-min.png"
+                alt="скрепка"
+              />
+            </picture>
+            <!-- </div> -->
+
+            <ul class="partitions-list list">
+              <li class="partitions-item">
+                <a href="" class="partitions-link link">
+                  <p class="partitions-link-note">сборник стихов</p>
+                  <svg class="partitions-note-vector">
+                    <use href="./img/sprite.svg#poetry-vector"></use>
+                  </svg>
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/partitions/note/note-desktop-min.png    1x,
+                        ./img/partitions/note/note-desktop@2x-min.png 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/partitions/note/note-tablet-min.png    1x,
+                        ./img/partitions/note/note-tablet@2x-min.png 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/partitions/note/note-mobile-min.png    1x,
+                        ./img/partitions/note/note-mobile@2x-min.png 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="partitions-img-note"
+                      src="./img/partitions/note/note-mobile-min.png"
+                      alt="блокнот"
+                      class="partitions-img"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <!-- <li class="partitions-item">
+                <a href="" class="partitions-link link">
+                  <p class="partitions-name">отзывы</p>
+                  <img src="" alt="чернильница" class="partitions-img" />
+                </a>
+              </li>
+              <li class="partitions-item">
+                <a href="" class="partitions-link link">
+                  <p class="partitions-name">галерея</p>
+                  <img src="" alt="фотоаппарат" class="partitions-img" />
+                </a>
+              </li>
+              <li class="partitions-item">
+                <a href="" class="partitions-link link">
+                  <p class="partitions-name">От автора</p>
+                  <img src="" alt="смартфон" class="partitions-img" />
+                </a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-author">
+        <div class="container">
+          <h2 class="about-author-heading subhead">Об авторе</h2>
+          <img src="" alt="фото автора" class="about-author-img" />
+          <h3 class="about-author-subhead secondary-subhead">Про мой путь</h3>
+          <p class="about-author-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+            inventore, temporibus, non sunt atque expedita voluptate amet
+            tempora praesentium tenetur eum dolore ad consequuntur qui quam
+            corporis! Aspernatur, ullam numquam.
+          </p>
+        </div>
+      </section>
+
+      <section class="partitions-filter">
+        <div class="container">
+          <h2 class="partitions-filter-heading">разделы</h2>
+          <ul class="partitions-filter-list list">
+            <li class="partitions-filter-item">
+              <a href="" class="partitions-filter-link link">все</a>
+            </li>
+            <li class="partitions-filter-item">
+              <a href="" class="partitions-filter-link link"
+                >обо всем понемногу</a
+              >
+            </li>
+            <li class="partitions-filter-item">
+              <a href="" class="partitions-filter-link link"
+                >жизнь продолжается</a
+              >
+            </li>
+            <li class="partitions-filter-item">
+              <a href="" class="partitions-filter-link link"
+                >вспоминая лебяжье</a
+              >
+            </li>
+            <li class="partitions-filter-item">
+              <a href="" class="partitions-filter-link link"
+                >праздники, поздравления</a
+              >
+            </li>
+            <li class="partitions-filter-item">
+              <a href="" class="partitions-filter-link link">зарисовки</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slider">
+        <div class="container">
+          <h2 class="slider-heading visualy-hidden">блокнот-слайдер</h2>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="./" class="footer-logo link">logo</a>
+      <nav class="footer-nav">
+        <ul class="footer-nav-list list">
+          <li class="footer-nav-item">
+            <a href="" class="footer-nav-link link">сборник стихов</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="" class="footer-nav-link link">галерея</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="" class="footer-nav-link link">от автора</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="" class="footer-nav-link link">отзывы</a>
+          </li>
+        </ul>
+
+        <ul class="footer-soc-lis list">
+          <li class="footer-soc-item">
+            <a href="" class="footer-soc-link link"></a>
+          </li>
+          <li class="footer-soc-item">
+            <a href="" class="footer-soc-link link"></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer-form-descr">желаете задать какой-либо вопрос?</p>
+      </div>
+
+      <p class="copyright">copyright</p>
+    </footer>
+  </body>
+</html>
