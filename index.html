@@ -37,6 +37,22 @@
             <use href="./img/sprite.svg#icon-header-logo"></use>
           </svg>
         </a>
+        <ul class="header-site-nav-list list">
+          <li class="header-site-nav-item">
+            <a href="#" class="header-site-nav-link link js-current"
+              >Сборник стихов</a
+            >
+          </li>
+          <li class="header-site-nav-item">
+            <a href="#" class="header-site-nav-link link">Галерея</a>
+          </li>
+          <li class="header-site-nav-item">
+            <a href="#" class="header-site-nav-link link">От автора</a>
+          </li>
+          <li class="header-site-nav-item">
+            <a href="#" class="header-site-nav-link link">Отзывы</a>
+          </li>
+        </ul>
         <ul class="header-soc-list list">
           <li class="header-soc-item">
             <a href="" class="header-soc-link link">
@@ -58,34 +74,51 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-heading">Cборник стихов</h1>
-          <picture class="hero-image">
-            <source
-              srcset="
-                ./img/hero/hero-desktop-min.jpg    1x,
-                ./img/hero/hero-desktop@2x-min.jpg 2x
-              "
-              media="(min-width: 1200px)"
+          <div class="hero-inner-container">
+            <div class="hero-img-underlay"></div>
+            <img
+              src="./img/hero/Scotch-min.png"
+              alt="скотч"
+              class="hero-img-scotch"
             />
+            <svg class="hero-author-signa">
+              <use href="./img/sprite.svg#icon-signature"></use>
+            </svg>
 
-            <source
-              srcset="
-                ./img/hero/hero-tablet-min.png    1x,
-                ./img/hero/hero-tablet@2x-min.png 2x
-              "
-              media="(min-width: 768px)"
-            />
+            <div class="hero-text-thumb">
+              <h1 class="hero-heading">Cборник стихов</h1>
+            </div>
 
-            <source
-              srcset="
-                ./img/hero/hero-mobile-min.png    1x,
-                ./img/hero/hero-mobile@2x-min.png 2x
-              "
-              media="(max-width: 767px)"
-            />
+            <div class="hero-img-thumb">
+              <picture class="hero-image">
+                <source
+                  srcset="
+                    ./img/hero/hero-desktop-min.jpg    1x,
+                    ./img/hero/hero-desktop@2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
 
-            <img class="hero-img" src="#" alt="заставка с автором" />
-          </picture>
+                <source
+                  srcset="
+                    ./img/hero/hero-tablet-min.png    1x,
+                    ./img/hero/hero-tablet@2x-min.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/hero/hero-mobile-min.png    1x,
+                    ./img/hero/hero-mobile@2x-min.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img class="hero-img" src="#" alt="заставка с автором" />
+              </picture>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -161,11 +194,10 @@
                 alt="скрепка"
               />
             </picture>
-            <!-- </div> -->
 
             <ul class="partitions-list list">
               <li class="partitions-item">
-                <a href="" class="partitions-link link">
+                <a href="#" class="partitions-link link">
                   <p class="partitions-link-note">сборник стихов</p>
                   <svg class="partitions-note-vector">
                     <use href="./img/sprite.svg#poetry-vector"></use>
@@ -201,18 +233,21 @@
                   </picture>
                 </a>
               </li>
-              <!-- <li class="partitions-item">
-                <a href="" class="partitions-link link">
+
+              <li class="partitions-item">
+                <a href="#" class="partitions-link link">
                   <p class="partitions-name">отзывы</p>
                   <img src="" alt="чернильница" class="partitions-img" />
                 </a>
               </li>
-              <li class="partitions-item">
+
+              <!-- <li class="partitions-item">
                 <a href="" class="partitions-link link">
                   <p class="partitions-name">галерея</p>
                   <img src="" alt="фотоаппарат" class="partitions-img" />
                 </a>
               </li>
+              
               <li class="partitions-item">
                 <a href="" class="partitions-link link">
                   <p class="partitions-name">От автора</p>
